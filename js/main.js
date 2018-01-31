@@ -72,15 +72,49 @@ console.log(topSpeed()); // logs the number 80
 function addNumbers(num1, num2){
 	return (num1 + num2); // the values of my args are now used as vars inside my func
 }
-console.log(addNumbers(100, 3000));
+console.log(addNumbers(100, 3000)); // logs 3100 to the console
 
+// returns true
 if(addNumbers(50, 50) === 100){
 	console.log('Congrats!!');
 }
 
 
+// this func does not return anything, we just 'do something' immediately
+// this is a named func
+function fullName(fName, lName){
+	console.log(fName + ' ' + lName);
+}
 
+fullName('Nick', 'Hughes'); // invokes fullName func
 
+// we can also create a func and store it in a var
+// it's an anonymous func, stored in a var (anon because it has no name)
+var myGreatFunc = function(){
+	console.log('function stored in var');
+}
 
+myGreatFunc();
 
+// 1) Write a func that accepts an arg
+function door(prize){
+	//based on the value of prize
+	if(prize === 'Teddy Bear'){
+		console.log('You won the teddy bear!');
+	} else if(prize === 'Goldfish'){
+		console.log('You won the goldfish!');
+	} else if(prize === 'Candy'){
+		console.log('You won the candy!');
+	}
+}
+
+door('Teddy Bear');
+
+var foo = {
+	color: 'red'
+};
+console.log(typeof foo.color);
+
+var cartoons = ['Garfield', 'Heathcliff', 'Snoopy'];
+console.log(cartoons.length); // log 3
 
